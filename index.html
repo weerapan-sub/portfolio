@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Weerapan - Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <nav class="navbar navbar-expand-md fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Weerapan</a>
+
+        <!--
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      -->
+
+      <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="toggler-icon top-bar"></span>
+      <span class="toggler-icon middle-bar"></span>
+      <span class="toggler-icon bottom-bar"></span>
+    </button>
+    
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="#About">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Tutorials</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+      <!-- Background image -->
+  <div class="welcome-box">
+    <div class="welcome-tx">
+          <h1 class="mb-3">Hi, I'm <span class="type-color" id="TypeAni"></span></h1>
+          <h5 class="mb-4 sub-welcome">Welcome to my Personal Website.<br>
+                          I will be sharing interesting stories, tips, and things I enjoy doing.</h5>
+          <a
+            class="btn btn-outline-warning btn-lg m-2"
+            href="https://www.youtube.com/watch?v=c9B4TPnak1A"
+            role="button"
+            rel="nofollow"
+            target="_blank"
+          >My Work</a
+          >
+          <a
+            class="btn btn-outline-warning btn-lg m-2"
+            href="https://mdbootstrap.com/docs/standard/"
+            target="_blank"
+            role="button"
+          >Tutorial</a
+          >
+  </div>
+</div>
+  <!-- Background image -->
+
+    <img class="bg-img" src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=100" alt="BG Image">
+
+
+      <div class="container">
+        <div class="about-box" id="About">
+          <h4 class="title-all">GET TO KNOW ME</h4>
+
+<!----------------------------------------------------------->
+<section class="hero">
+  <div>
+      <h1 class="h1-about">Weerapan-Sub</h1>
+      <p>สวัสดีครับ! ผมชื่อ วีระพันธุ์ ปัจจุบันเป็น Graphic Designer อยู่ที่จังหวัดเชียงใหม่ แม้งานที่ทำส่วนมากจะเกี่ยวข้องกับการออกแบบเป็นหลัก แต่จริงๆแล้วผมชื่นชอบงานด้าน ภาพยนตร์ แอนิเมชั่น เกม และสื่อ AR มากๆ จึงตัดสินใจสร้างเว็บนี้ขึ้นมา เพื่อรวบรวมผลงานของตนเอง รวมถึงแบ่งปันประสบการณ์และความรู้จากการทำงานให้ผู้ที่สนใจได้อ่านไปด้วย</p>
+      <p class="p-about">Hello! Weerapan is my name. I work as a graphic designer in Chiang Mai right now. Although I do a lot of design-related stuff. But in all honesty, I have a great enthusiasm for movies, animations, games, and augmented reality media. so I decided to start this website. to gather my own works and impart knowledge and experiences from my work to interested parties.</p>
+  </div>
+  <img class="img-about" src="https://silkroad007.github.io/Images/robbie-lens.png" alt="">
+</section>
+<!----------------------------------------------------------->
+
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <!-- Typing Animation -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed('#TypeAni', {
+      // Waits 1000ms after typing "First"
+      strings: ['Weerapan',
+                'Animator',
+                'VFX Artist',
+                'Game Dev'],
+      typeSpeed: 50,
+      backSpeed: 50,
+      backDelay: 1000,
+      loop: true,
+      loopCount: Infinity,
+      });
+    </script>
+
+<!-- scroll to change navbar BG -->
+    <script>
+      const navEl = document.querySelector('.navbar');
+      window.addEventListener('scroll', () => {
+        if (window.scrollY >= 56) {
+          navEl.classList.add('navbar-scrolled');
+        } else if (window.scrollY < 56) {
+          navEl.classList.remove('navbar-scrolled');
+        }
+      });
+    </script>
+
+<!-- Nav Bar Berger change color -->
+
+    <script>
+      var navbar = document.querySelector('nav')
+      var links = document.querySelectorAll('.nav-link')
+      var navbarB = document.querySelectorAll('.navbar-brand')
+      var bergerMB = document.querySelectorAll('.navbar-toggler-icon')
+
+      window.onscroll = function() {
+
+    if (window.pageYOffset >= 56) {
+        navbar.classList.add('scrolled')
+        links.forEach(v => {
+          v.classList.add('scrolled')
+        });
+        navbarB.forEach(v => {
+          v.classList.add('scrolled')
+        });
+        bergerMB.forEach(v => {
+          v.classList.add('scrolled')
+        });
+    } else {
+        navbar.classList.remove('scrolled')
+        links.forEach(v => {
+          v.classList.remove('scrolled')
+        });
+        navbarB.forEach(v => {
+          v.classList.remove('scrolled')
+        });
+        bergerMB.forEach(v => {
+          v.classList.remove('scrolled')
+        });
+    }
+}
+    </script>
+
+  </body>
+</html>
